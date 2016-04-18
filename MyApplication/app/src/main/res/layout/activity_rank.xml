@@ -5,7 +5,7 @@
     android:id="@+id/watch_view_stub"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:rectLayout="@layout/rect_activity_main"
-    app:roundLayout="@layout/round_activity_main"
-    tools:context="com.example.andy.fitex_wear.MainActivity"
+    app:rectLayout="@layout/rect_activity_rank"
+    app:roundLayout="@layout/round_activity_rank"
+    tools:context="com.example.andy.fitex_wear.Rank"
     tools:deviceIds="wear"></android.support.wearable.view.WatchViewStub>
