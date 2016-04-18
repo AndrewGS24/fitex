@@ -7,9 +7,15 @@
     tools:context="com.example.andy.fitex_wear.Rank"
     tools:deviceIds="wear_square">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_square" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:id="@+id/listView" />
+
+    <ImageButton
+        android:layout_width="52dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/card_background" />
 </LinearLayout>
