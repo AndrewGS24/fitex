@@ -27,8 +27,23 @@ public class MainActivity extends Activity {
         });
     }
 
-    public void onButtonClick(View view) {
+    public void onRankClick(View view) {
         Intent intent = new Intent(this, Rank.class);
+        this.startActivity(intent);
+    }
+
+    public void onMessageClick(View view) {
+        Intent intent = new Intent(this, Message.class);
+        this.startActivity(intent);
+    }
+
+    public void onTeamClick(View view) {
+        Intent intent = new Intent(this, Team.class);
+        this.startActivity(intent);
+    }
+
+    public void onAddClick(View view) {
+        Intent intent = new Intent(this, Add.class);
         this.startActivity(intent);
     }
 }

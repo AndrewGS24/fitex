@@ -26,7 +26,8 @@
             android:layout_height="50dp"
             android:layout_width="50dp"
             android:src="@color/circular_button_normal"
-            android:id="@+id/teamBut" />
+            android:id="@+id/teamBut"
+            android:onClick="onTeamClick"/>
 
         <ImageButton
             android:background="@null"
@@ -34,7 +35,8 @@
             android:layout_height="50dp"
             android:layout_width="50dp"
             android:src="@color/blue"
-            android:id="@+id/activityBut" />
+            android:id="@+id/activityBut"
+            android:onClick="onAddClick"/>
 
         <ImageButton
             android:background="@null"
@@ -43,7 +45,7 @@
             android:layout_width="50dp"
             android:src="@color/blue"
             android:id="@+id/rankBut"
-            android:onClick="onButtonClick"/>
+            android:onClick="onRankClick"/>
 
         <ImageButton
             android:background="@null"
@@ -51,7 +53,8 @@
             android:layout_height="50dp"
             android:layout_width="50dp"
             android:src="@android:drawable/ic_dialog_email"
-            android:id="@+id/messagesBut" />
+            android:id="@+id/messagesBut"
+            android:onClick="onMessageClick"/>
 
         <ProgressBar
             android:id="@+id/progressWheel"

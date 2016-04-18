@@ -4,4 +4,7 @@
     <string name="title_activity_rank">Rank</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_team">Team</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_add">Add</string>
 </resources>
