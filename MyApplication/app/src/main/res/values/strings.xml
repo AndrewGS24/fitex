@@ -7,4 +7,6 @@
     <string name="title_activity_team">Team</string>
     <string name="title_activity_message">Message</string>
     <string name="title_activity_add">Add</string>
+    <string name="title_activity_exercise">Exercise</string>
+    <string name="title_activity_fruit">Fruit</string>
 </resources>

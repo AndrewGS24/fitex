@@ -34,7 +34,7 @@
             android:layout_gravity="bottom|right"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@color/blue"
+            android:src="@android:drawable/ic_menu_add"
             android:id="@+id/activityBut"
             android:onClick="onAddClick"/>
 

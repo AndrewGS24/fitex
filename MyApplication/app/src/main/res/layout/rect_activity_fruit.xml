@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:weightSum="1"
+    tools:context="com.example.andy.fitex_wear.MainActivity"
+    tools:deviceIds="wear_square">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dp"
+        app:layout_box="all"
+        android:layout_weight="1"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView"
+            android:layout_gravity="left|top" />
+
+        <ImageButton
+            android:layout_width="58dp"
+            android:layout_height="49dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="right|top"
+            android:src="@android:drawable/arrow_up_float" />
+
+        <ImageButton
+            android:layout_width="58dp"
+            android:layout_height="49dp"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="right|center_vertical"
+            android:src="@android:drawable/arrow_down_float" />
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="left|bottom"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@color/circular_button_normal"
+            android:id="@+id/homeBut"
+            android:onClick="onTeamClick"/>
+
+        <ImageButton
+            android:background="@null"
+            android:layout_gravity="right|bottom"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:id="@+id/imageButton5"
+            android:onClick="onTeamClick" />
+
+    </FrameLayout>
+</RelativeLayout>
