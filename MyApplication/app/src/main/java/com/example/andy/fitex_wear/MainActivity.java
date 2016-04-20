@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.TextClock;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ public class MainActivity extends Activity {
 
     private TextView mTextView;
     private TextClock mTextClock;
+    private ProgressBar pBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class MainActivity extends Activity {
             public void onLayoutInflated(WatchViewStub stub) {
                 mTextView = (TextView) stub.findViewById(R.id.text);
                 //mTextClock = (TextClock) stub.findViewById(R.id.textClock);
+                pBar = (ProgressBar) stub.findViewById(R.id.progressWheel);
+                pBar.setSecondaryProgress(20);
             }
         });
     }
