@@ -17,5 +17,5 @@
         android:layout_height="match_parent"
         android:id="@+id/imageButton"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/card_background" />
+        android:src="@drawable/home" />
 </LinearLayout>

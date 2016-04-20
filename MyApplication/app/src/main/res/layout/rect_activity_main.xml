@@ -43,7 +43,7 @@
             android:layout_gravity="left|top"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@color/blue"
+            android:src="@drawable/ic_action_name"
             android:id="@+id/rankBut"
             android:onClick="onRankClick"/>
 

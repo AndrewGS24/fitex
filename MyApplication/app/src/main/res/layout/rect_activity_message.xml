@@ -41,12 +41,12 @@
         android:layout_height="match_parent"
         android:id="@+id/home_frame">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
+        <ImageButton
+            android:layout_width="52dp"
+            android:layout_height="52dp"
             android:id="@+id/messages_home"
-            android:layout_gravity="center_horizontal|bottom" />
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/home" />
     </FrameLayout>
 
 </LinearLayout>

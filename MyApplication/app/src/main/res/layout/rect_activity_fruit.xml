@@ -47,7 +47,7 @@
             android:layout_gravity="left|bottom"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@color/circular_button_normal"
+            android:src="@drawable/home"
             android:id="@+id/homeBut"
             android:onClick="onTeamClick"/>
 
