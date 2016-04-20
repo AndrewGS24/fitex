@@ -70,7 +70,7 @@ public class Rank extends Activity implements WearableListView.ClickListener {
         @Override
         public void onBindViewHolder(WearableListView.ViewHolder holder, int position) {
             TextView view = (TextView) holder.itemView.findViewById(R.id.textView);
-            view.setText(position + ". " + listItems.get(position).toString());
+            view.setText((position + 1) + ". " + listItems.get(position).toString());
             holder.itemView.setTag(position);
         }
 
