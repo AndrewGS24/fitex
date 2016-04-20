@@ -7,10 +7,12 @@
     tools:context="com.example.andy.fitex_wear.Rank"
     tools:deviceIds="wear_square">
 
-    <ListView
+    <android.support.wearable.view.WearableListView
         android:layout_width="match_parent"
         android:layout_height="131dp"
-        android:id="@+id/listView" />
+        android:id="@+id/listViewRank" >
+    </android.support.wearable.view.WearableListView>
+
 
     <ImageButton
         android:layout_width="52dp"
