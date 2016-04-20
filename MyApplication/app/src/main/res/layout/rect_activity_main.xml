@@ -25,7 +25,7 @@
             android:layout_gravity="bottom|left"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@color/circular_button_normal"
+            android:src="@drawable/team"
             android:id="@+id/teamBut"
             android:onClick="onTeamClick"/>
 
@@ -34,7 +34,7 @@
             android:layout_gravity="bottom|right"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@android:drawable/ic_menu_add"
+            android:src="@drawable/add"
             android:id="@+id/activityBut"
             android:onClick="onAddClick"/>
 
@@ -52,7 +52,7 @@
             android:layout_gravity="right|top"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@android:drawable/ic_dialog_email"
+            android:src="@drawable/message"
             android:id="@+id/messagesBut"
             android:onClick="onMessageClick"/>
 

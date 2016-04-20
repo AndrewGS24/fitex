@@ -24,13 +24,15 @@
             android:layout_width="80dp"
             android:layout_height="160dp"
             android:id="@+id/imageButton3"
-            android:layout_gravity="left|top" />
+            android:layout_gravity="left|top"
+            android:src="@drawable/exercise" />
 
         <ImageButton
             android:layout_width="80dp"
             android:layout_height="160dp"
             android:id="@+id/imageButton4"
-            android:layout_gravity="right|top" />
+            android:layout_gravity="right|top"
+            android:src="@drawable/fruit" />
 
     </FrameLayout>
 </RelativeLayout>
