@@ -52,7 +52,6 @@ public class Rank extends Activity implements WearableListView.ClickListener {
         listItems.add("Wednesday");
         listItems.add("Thursday");
         listItems.add("Friday");
-        listItems.add("Saturday");
     }
 
     private class MyAdapter extends WearableListView.Adapter {
@@ -71,7 +70,7 @@ public class Rank extends Activity implements WearableListView.ClickListener {
         @Override
         public void onBindViewHolder(WearableListView.ViewHolder holder, int position) {
             TextView view = (TextView) holder.itemView.findViewById(R.id.textView);
-            view.setText(listItems.get(position).toString());
+            view.setText(position + ". " + listItems.get(position).toString());
             holder.itemView.setTag(position);
         }
 
