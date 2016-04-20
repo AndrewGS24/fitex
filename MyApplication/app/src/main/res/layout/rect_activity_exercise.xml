@@ -22,40 +22,31 @@
 
         <Button
             android:layout_width="86dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:text="act 1"
             android:id="@+id/button"
             android:layout_gravity="left|top" />
 
         <Button
             android:layout_width="86dp"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:text="act 2"
             android:id="@+id/button2"
             android:layout_gravity="right|top" />
 
         <Button
             android:layout_width="86dp"
-            android:layout_height="wrap_content"
-            android:text="act 3"
-            android:id="@+id/button3"
-            android:layout_gravity="left|center_vertical" />
+            android:layout_height="70dp"
+            android:text="act 4"
+            android:id="@+id/button4"
+            android:layout_gravity="right|bottom" />
 
         <Button
             android:layout_width="86dp"
-            android:layout_height="wrap_content"
-            android:text="act 4"
-            android:id="@+id/button4"
-            android:layout_gravity="right|center_vertical" />
-
-        <ImageButton
-            android:background="@null"
-            android:layout_gravity="center_horizontal|bottom"
-            android:layout_height="50dp"
-            android:layout_width="50dp"
-            android:src="@drawable/home"
-            android:id="@+id/homeBut"
-            android:onClick="onTeamClick"/>
+            android:layout_height="70dp"
+            android:text="act 3"
+            android:id="@+id/button3"
+            android:layout_gravity="left|bottom" />
 
     </FrameLayout>
 </RelativeLayout>
