@@ -4,11 +4,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
 import android.widget.TextView;
+import android.view.View;
+import android.content.Intent;
 
 public class Fruit extends Activity {
 
     private TextView mTextView;
-
+    private double fruitCount;
+    private TextView cupCount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +23,23 @@ public class Fruit extends Activity {
                 mTextView = (TextView) stub.findViewById(R.id.text);
             }
         });
+        fruitCount = 0;
+        cupCount = (TextView) stub.findViewById(R.id.cupCount);
+    }
+    public void onUpClick(View view) {
+        fruitCount += .5;
+        updateMsg();
+    }
+
+    public void onDownClick(View view) {
+        if (fruitCount > 0) {
+            fruitCount -= .5;
+            updateMsg();
+        }
+    }
+
+    private void updateMsg()
+    {
+        cupCount.setText(fruitCount + " cups");
     }
 }

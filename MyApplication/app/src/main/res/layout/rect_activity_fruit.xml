@@ -24,8 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="112dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/textView"
+            android:text="0 cups"
+            android:id="@+id/cupCount"
             android:layout_gravity="left|top" />
 
         <ImageButton

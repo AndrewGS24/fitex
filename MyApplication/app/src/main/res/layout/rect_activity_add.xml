@@ -25,14 +25,16 @@
             android:layout_height="160dp"
             android:id="@+id/imageButton3"
             android:layout_gravity="left|top"
-            android:src="@drawable/exercise" />
+            android:src="@drawable/exercise"
+            android:onClick="onExerciseClick" />
 
         <ImageButton
             android:layout_width="80dp"
             android:layout_height="160dp"
             android:id="@+id/imageButton4"
             android:layout_gravity="right|top"
-            android:src="@drawable/fruit" />
+            android:src="@drawable/fruit"
+            android:onClick="onFruitClick" />
 
     </FrameLayout>
 </RelativeLayout>

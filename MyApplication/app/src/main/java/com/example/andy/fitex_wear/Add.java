@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
 import android.widget.TextView;
+import android.view.View;
+import android.content.Intent;
 
 public class Add extends Activity {
 
@@ -20,5 +22,15 @@ public class Add extends Activity {
                 mTextView = (TextView) stub.findViewById(R.id.text);
             }
         });
+    }
+
+    public void onExerciseClick(View view) {
+        Intent intent = new Intent(this, Exercise.class);
+        this.startActivity(intent);
+    }
+
+    public void onFruitClick(View view) {
+        Intent intent = new Intent(this, Fruit.class);
+        this.startActivity(intent);
     }
 }
