@@ -71,6 +71,11 @@ public class Team extends Activity implements WearableListView.ClickListener {
             TextView view = (TextView) holder.itemView.findViewById(R.id.textView);
             view.setText(listItems.get(position).toString());
             holder.itemView.setTag(position);
+            int textColorId = R.color.white; // Default color
+            if (position == 1) {
+                textColorId = R.color.red;
+            }
+            view.setTextColor(getResources().getColor(textColorId));
         }
 
         @Override

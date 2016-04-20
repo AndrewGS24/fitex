@@ -47,11 +47,11 @@ public class Rank extends Activity implements WearableListView.ClickListener {
     private static ArrayList<String> listItems;
     static {
         listItems = new ArrayList<String>();
-        listItems.add("Monday");
-        listItems.add("Tuesday");
-        listItems.add("Wednesday");
-        listItems.add("Thursday");
-        listItems.add("Friday");
+        listItems.add("Batman    4,450");
+        listItems.add("Robin     3,900");
+        listItems.add("Batgirl       2,324");
+        listItems.add("Nightwing   1,450");
+        listItems.add("Red Hood   420");
     }
 
     private class MyAdapter extends WearableListView.Adapter {
@@ -70,8 +70,13 @@ public class Rank extends Activity implements WearableListView.ClickListener {
         @Override
         public void onBindViewHolder(WearableListView.ViewHolder holder, int position) {
             TextView view = (TextView) holder.itemView.findViewById(R.id.textView);
-            view.setText((position + 1) + ". " + listItems.get(position).toString());
+            view.setText(listItems.get(position).toString());
             holder.itemView.setTag(position);
+            int textColorId = R.color.white; // Default color
+            if (position == 3) {
+                textColorId = R.color.red;
+            }
+            view.setTextColor(getResources().getColor(textColorId));
         }
 
         @Override
